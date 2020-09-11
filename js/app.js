@@ -17,7 +17,7 @@ let hour = date.getHours();
 checkCity.addEventListener('click', _ => getWeather(cityInput.value))
 
 // Click for Check current location
-currentLocation.addEventListener("click", function() {getLocation()});
+currentLocation.addEventListener("click", _ => getLocation());
 
 // Event handling for press Enter
 cityInput.addEventListener("keypress", function (event) {
