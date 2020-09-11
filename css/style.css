@@ -19,8 +19,11 @@ body {
 
 header {
     text-align: center;
-    color: #FFF;
     padding: 60px 0;
+}
+
+.btn {
+    padding: 7px 20px;
 }
 
 header h1 {
@@ -28,7 +31,22 @@ header h1 {
     font-weight: 700;
 }
 
-#myVideo {
+.top .search .form-group {
+    margin-top: 30px;
+}
+
+.top .search .form-group .form-control {
+    width: 60%;
+    display: inline-block;
+    margin-right: -3px;
+    padding-top: 3px;
+}
+
+.output {
+    margin-top: 5%;
+}
+
+.output #myVideo {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -38,8 +56,8 @@ header h1 {
     min-width: 100%;
 }
 
-#wheater-info {
-    position: absolute;
+.output #wheater-info {
+    position: relative;
     bottom: 0;
     left: 15%;
     right: 15%;
@@ -49,3 +67,37 @@ header h1 {
     color: #FFF;
 }
 
+@media only screen and (min-width: 331px) {
+    @media only screen and (max-width: 650px) {
+        
+        header {
+            padding: 45px 0;
+        }
+
+        header h1 {
+            font-size: 27px;
+        }
+
+        .top {
+            text-align: center;
+        }
+
+        .output #myVideo {
+            top: 0;
+        }
+
+        .check-current-loctaion {
+            margin-bottom: 60px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        .output #wheater-info {
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+    }
+}
