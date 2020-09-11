@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <title>Weather App</title>
+
+    <!-- Google Fonts -->
+
+    <!-- CSS Vendors -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>What's the weather like?</h1>
+        </header>
+
+        <main>
+            <div class="top row">
+
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="search">
+                        <h4>Check weather for chosen place</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="city-input" placeholder="City name">
+                            <p class="city-name"></p>
+                            <button class="btn btn-primary" id="check-city">Check</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="output">
+                <div id="wheater-video">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="" type="video/mp4"></video>
+                </div>
+                <table class="table table-bordered" id="wheater-info">
+                    <tr>
+                        <td>City</td>
+                        <td id="city-info"></td>
+                    </tr>
+                    <tr>
+                        <td>Weather</td>
+                        <td id="wheat-info"></td>
+                    </tr>
+                    <tr>
+                        <td>Temperature</td>
+                        <td id="temp-info"></td>
+                    </tr>
+                    <tr>
+                        <td>Pressure</td>
+                        <td id="pressure-info"></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed</td>
+                        <td id="windSpeed-info"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </main>
+
+    </div>
+    <!-- Vendor JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- APP JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+/*home page color: #2058AB*/
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    background-image: url('../images/background-360.png');
+    background-size: cover;
+    color: #FFF;
+}
+
+header {
+    text-align: center;
+    color: #FFF;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    min-height: 100vh;
+    z-index: -1;
+    min-width: 100%;
+}
+
+#wheater-info {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    font-weight: 600;
+    display: none;
+    color: #FFF;
+}
+
