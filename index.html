@@ -35,13 +35,17 @@
         <main>
             <div class="top row">
 
+                <div class="col-12 col-md-6 col-sm-12 check-current-loctaion">
+                    <h4 class="choice-text">Check weather for your's current position</h4>
+                    <p class="choice-text" id="city">Your's city: <span class="city-name"></span></p>
+                    <button id="current-loctaion" type="button" class="btn btn-primary">Check</button>
+                </div>
 
                 <div class="col-md-6 col-sm-12">
                     <div class="search">
                         <h4>Check weather for chosen place</h4>
                         <div class="form-group">
                             <input type="text" class="form-control" id="city-input" placeholder="City name">
-                            <p class="city-name"></p>
                             <button class="btn btn-primary" id="check-city">Check</button>
                         </div>
                     </div>
@@ -81,6 +85,7 @@
 
     </div>
     <!-- Vendor JS -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyD06pquWXnhgoZAWCnBvaVJdrr7RJlKXAo"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
