@@ -50,6 +50,7 @@ header h1 {
     position: absolute;
     right: 0;
     bottom: 0;
+    top: 0;
     margin: 0;
     min-height: 100vh;
     z-index: -1;
@@ -80,10 +81,6 @@ header h1 {
 
         .top {
             text-align: center;
-        }
-
-        .output #myVideo {
-            top: 0;
         }
 
         .check-current-loctaion {

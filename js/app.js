@@ -19,6 +19,13 @@ checkCity.addEventListener('click', _ => getWeather(cityInput.value))
 // Click for Check current location
 currentLocation.addEventListener("click", function() {getLocation()});
 
+// Event handling for press Enter
+cityInput.addEventListener("keypress", function (event) {
+    if (event.keyCode == 13) {
+        getWeather(cityInput.value)
+        cityInput.value
+    }
+}, false);
 
 // Create Function (Get Current Loacation)
 function getLocation() {
